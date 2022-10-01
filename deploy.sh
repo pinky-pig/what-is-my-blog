@@ -22,7 +22,7 @@ git commit -m 'deploy'
 # git push -f git@github.com:<USERNAME>/<REPO>.git main:gh-pages
 
 
-git push -f https://github.com/pinky-pig/what-to-eat.git master:gh-pages
+git push -f https://github.com/pinky-pig/what-is-my-blog.git master:gh-pages
 
 # 返回目录，将刚才打包生成的静态文件在目录中删除
 cd -

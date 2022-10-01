@@ -9,7 +9,7 @@
 <style lang="less" scoped>
 
 .layout-wrapper{
-  @apply w-full h-full flex flex-col;
+  @apply w-full h-full flex flex-col min-h-screen;
   word-spacing: 0.12rem;
   background-image: var(--bg-point);
   background-repeat: repeat;
