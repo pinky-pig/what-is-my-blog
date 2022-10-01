@@ -20,7 +20,7 @@
       </router-link>
 
       <div class="div-contrary" >
-        <a href="https://github.com/pinky-pig/icons-basic-edit.git" target="_blank" title="GitHub">
+        <a href="https://github.com/pinky-pig/what-is-my-blog.git" target="_blank" title="GitHub">
           <div class="cursor-pointer bg-gray-700 dark:bg-gray-200" i-carbon-logo-github />
         </a>
       </div>

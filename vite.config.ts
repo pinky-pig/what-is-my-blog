@@ -1,5 +1,4 @@
 import { defineConfig } from 'vite'
-// import vue from '@vitejs/plugin-vue'
 import Vue from '@vitejs/plugin-vue'
 
 import Unocss from 'unocss/vite'
@@ -10,6 +9,7 @@ import Markdown from 'vite-plugin-vue-markdown'
 import Prism from 'markdown-it-prism'
 import LinkAttributes from 'markdown-it-link-attributes'
 import Pages from 'vite-plugin-pages'
+import { VitePWA } from 'vite-plugin-pwa'
 
 import path from 'path'
 
@@ -19,7 +19,6 @@ const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 export default defineConfig({
   base:'/what-is-my-blog/',
   plugins: [
-    // vue(),
     Vue({
       include: [/\.vue$/, /\.md$/],
       reactivityTransform: true,
@@ -30,6 +29,35 @@ export default defineConfig({
       dirs: 'src/views',
       extensions: ['vue', 'md'],
     }),
+
+    VitePWA({
+      registerType: 'autoUpdate',
+      includeAssets: ['logo.svg', 'logo.svg'],
+      manifest: {
+        name: 'logo',
+        short_name: 'What Is My Blog',
+        theme_color: '#ffffff',
+        icons: [
+          {
+            src: '/pwa-192x192.png',
+            sizes: '192x192',
+            type: 'image/png',
+          },
+          {
+            src: '/pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+          },
+          {
+            src: '/pwa-512x512.png',
+            sizes: '512x512',
+            type: 'image/png',
+            purpose: 'any maskable',
+          },
+        ],
+      },
+    }),
+
     Markdown({
       wrapperClasses: markdownWrapperClasses,
       headEnabled: true,
@@ -68,6 +96,7 @@ export default defineConfig({
       dts: 'src/components.d.ts'
     })
   ],
+
   resolve: {
     alias: {
       '@': path.resolve(__dirname,'src'),

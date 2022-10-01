@@ -32,9 +32,12 @@
     "vite": "^3.1.0",
     "vite-plugin-vue-layouts": "^0.6.0",
     "vite-plugin-vue-markdown": "^0.20.1",
+    "vite-plugin-pwa": "^0.12.7",
     "vite-plugin-pages": "^0.25.0",
     "markdown-it-link-attributes": "^4.0.1",
     "markdown-it-prism": "^2.3.0",
+    "vite-ssg": "^0.20.2",
+    "vite-ssg-sitemap": "^0.2.7",
     "vue-tsc": "^0.40.4"
   }
 }
