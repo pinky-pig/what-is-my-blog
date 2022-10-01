@@ -7,11 +7,22 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    Canvas: typeof import('./components/Canvas.vue')['default']
+    Collapse: typeof import('./components/Collapse.vue')['default']
     ConfettiCanvas: typeof import('./components/ConfettiCanvas.vue')['default']
+    ContentDropMenu: typeof import('./components/ContentDropMenu.vue')['default']
+    Counter: typeof import('./components/Counter.vue')['default']
+    CPopselect: typeof import('./components/CPopselect.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     Header: typeof import('./components/Header.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
+    NotOptimized: typeof import('./components/NotOptimized.vue')['default']
+    PreviewCode: typeof import('./components/PreviewCode.vue')['default']
+    README: typeof import('./components/README.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    Slide: typeof import('./components/Slide.vue')['default']
+    SvgBox: typeof import('./components/SvgBox.vue')['default']
+    ToolButton: typeof import('./components/ToolButton.vue')['default']
   }
 }

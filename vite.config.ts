@@ -1,5 +1,7 @@
 import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
+// import vue from '@vitejs/plugin-vue'
+import Vue from '@vitejs/plugin-vue'
+
 import Unocss from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
@@ -17,7 +19,11 @@ const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 export default defineConfig({
   base:'/what-is-my-blog/',
   plugins: [
-    vue(),
+    // vue(),
+    Vue({
+      include: [/\.vue$/, /\.md$/],
+      reactivityTransform: true,
+    }),
     Unocss({ /* options */ }),
     Layouts(),
     Pages({

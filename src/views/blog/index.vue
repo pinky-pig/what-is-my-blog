@@ -1,6 +1,5 @@
 <template>
-  <div class="bg-[var(--bg-contrary)]">blog</div>
-  <Footer />
+  blog
 </template>
 <script setup lang="ts">
     

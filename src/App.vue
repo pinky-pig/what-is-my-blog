@@ -3,4 +3,3 @@
     <RouterView />
   </suspense>
 </template>
-

@@ -16,6 +16,7 @@ export default defineConfig({
     ['flex-center', 'flex flex-row justify-center items-center'],
     ['div-contrary', 'bg-[var(--bg-contrary)] rounded-md p-3px hover:bg-[var(--bg-contrary-light)]'],
     ['text-contrary', ' p-3px hover:text-[var(--text-contrary)]'],
+    ['div-contrary-without-hover', 'bg-[var(--bg-contrary)] rounded-md p-3px selection:text-white'],
   ],
   presets: [
     presetUno(),

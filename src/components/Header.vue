@@ -15,12 +15,14 @@
         <div class="cursor-pointer">Blog</div>
       </router-link>
 
-      <router-link to="/blog" class="text-contrary">
+      <router-link to="/project" class="text-contrary">
         <div class="cursor-pointer">Project</div>
       </router-link>
 
-      <div class="div-contrary">
-        <div class="cursor-pointer" i-carbon-logo-github />
+      <div class="div-contrary" >
+        <a href="https://github.com/pinky-pig/icons-basic-edit.git" target="_blank" title="GitHub">
+          <div class="cursor-pointer bg-gray-700 dark:bg-gray-200" i-carbon-logo-github />
+        </a>
       </div>
 
       <div @click="toggleDark()" class=" div-contrary">
