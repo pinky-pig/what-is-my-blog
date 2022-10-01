@@ -11,11 +11,11 @@
     <!-- button -->
     <div class=" flex flex-row gap-2 ">
 
-      <router-link to="/blog" class="text-contrary">
+      <router-link to="/blog" class="div-contrary">
         <div class="cursor-pointer">Blog</div>
       </router-link>
 
-      <router-link to="/project" class="text-contrary">
+      <router-link to="/project" class="div-contrary">
         <div class="cursor-pointer">Project</div>
       </router-link>
 
