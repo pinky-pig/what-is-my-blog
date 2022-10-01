@@ -1,0 +1,32 @@
+/* 中文 */
+@font-face {
+  font-family: 'KaiRegular';
+  src: url('../../public/LXGWWenKaiLite-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'KaiLight';
+  src: url('../../public/LXGWWenKaiLite-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+/* 英文 */
+@font-face {
+  font-family: 'Neucha';
+  src: url('../../public/Neucha-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PatrickHand';
+  src: url('../../public/PatrickHand-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PatrickHandSC';
+  src: url('../../public/PatrickHandSC-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
