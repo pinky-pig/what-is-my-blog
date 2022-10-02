@@ -12,9 +12,7 @@ import Pages from 'vite-plugin-pages'
 import { VitePWA } from 'vite-plugin-pwa'
 
 import path from 'path'
-
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
-
 
 export default defineConfig({
   base:'/what-is-my-blog/',

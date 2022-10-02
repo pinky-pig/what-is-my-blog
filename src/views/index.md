@@ -3,9 +3,10 @@ name: README
 ---
 
 <style>
-  p,span{
+  span{
     @apply bg-[var(--bg-contrary)] rounded-md p-3px;
     font-family: Neucha,PatrickHand,PatrickHandSC,KaiLight,KaiRegular;
+    padding-top:1%;
   }
 </style>
 
@@ -32,8 +33,16 @@ name: README
 > - <span>高德地图 JS API 、 ArcGis JS API 、 Krpano.js 、 MapBox.js </span>
 - <span>在学习</span>
 > - <span>Svg 、 Canvas 、 Three.js</span>
+- <span>日常</span>
+> - <span>Vscode 、 PicGo 、 Notion</span>
 
 # <span>项目代码</span>
 
-<span> 我擅长将想法转为实际，习惯于在手敲中学习知识。</span>
+<span> 我习惯于在手敲代码中学习知识。</span>
 
+<script setup>
+  import CardGroup from '~/components/CardGroup.vue'
+</script>
+
+
+<CardGroup></CardGroup>
