@@ -1,7 +1,7 @@
 <template>
   <div class="mt-4 grid grid-cols-1 gap-8 print:grid-cols-2 sm:grid-cols-2 md:gap-6">
     
-    <div class="card bg-[var(--bg-contrary)]" v-for="item in list">
+    <div class="card bg-[var(--bg-contrary-light)]" v-for="item in list">
       <div class="card-body">
         <h4 class="card-title">{{item.title}}</h4>
         <h5 class="card-subtitle">
@@ -39,6 +39,6 @@
 </script>
 <style lang="less" scoped>
 .card{
-  background-image: url(/geometry2.png);
+  background-image: var(--geometry-bg);
 }
 </style>

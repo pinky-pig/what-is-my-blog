@@ -8,7 +8,7 @@ html{
   --bg-contrary-light: #eeeeee;
 
   --text-contrary: rgba(55, 65, 81, 0.8);
-
+  --geometry-bg:url(/geometry2.png);
 
 }
 
@@ -19,6 +19,6 @@ html.dark{
   --bg-contrary-light: #38383b;
 
   --text-contrary: rgba(229, 231, 235, 0.8);
-
+  --geometry-bg: transparent;
 }
 
