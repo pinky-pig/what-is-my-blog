@@ -5,7 +5,8 @@ name: README
 <style>
   span{
     @apply bg-[var(--bg-contrary)] rounded-md p-3px;
-    font-family: Neucha,PatrickHand,PatrickHandSC,KaiLight,KaiRegular;
+    font-family:'Neucha',LXGW WenKai,LXGW WenKai Mono,'Patrick Hand','Patrick Hand SC';
+    font-weight: 100;
     padding-top:1%;
   }
 </style>

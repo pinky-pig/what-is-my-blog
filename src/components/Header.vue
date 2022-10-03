@@ -38,7 +38,7 @@ const isDark = useDark()
 const toggleDark = useToggle(isDark)
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
   .header-container{
     backdrop-filter: saturate(50%) blur(8px);
     background: var(--background);
