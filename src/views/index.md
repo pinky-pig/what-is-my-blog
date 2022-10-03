@@ -20,11 +20,11 @@ name: README
 # <span>Intro</span>
 <span>2020年毕业于软件工程专业后，从事前端开发相关的工作，目前开发涉及地图大屏方向。我对软件开发抱有热情，对新鲜事物有着强烈的好奇心。</span>
 
-> - 🍓 <span> 工作中业务方向地图大屏端开发，地图工具 ArcGis JS API 、高德地图 JS API 、MapBox.js等，前端 Vue3 + Vite + TypeScript + NaiveUI 。 </span>
+> 🍓 <span> 工作中业务方向地图大屏端开发，地图工具 ArcGis JS API 、高德地图 JS API 、MapBox.js等，前端 Vue3 + Vite + TypeScript + NaiveUI 。 </span>
 
-> - 🍊 <span>熟悉擅长编写干净的、结构清晰的、有质量的代码 。</span>
+> 🍊 <span>熟悉擅长编写干净的、结构清晰的、有质量的代码 。</span>
 
-> - 🥝 <span>目前在专注学习图形化基础 。</span>
+> 🥝 <span>目前在专注学习图形化基础 。</span>
 
 # <span>语言和工具</span>
 - <span>在使用</span>
