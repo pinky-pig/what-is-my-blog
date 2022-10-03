@@ -94,6 +94,11 @@ export default defineConfig({
       dts: 'src/components.d.ts'
     })
   ],
+  server: {
+    host: '0.0.0.0',
+    port: 5173,
+    open: true,
+  },
 
   resolve: {
     alias: {

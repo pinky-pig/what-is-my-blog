@@ -4,12 +4,14 @@
   src: url('/LXGWWenKaiLite-Regular.ttf');
   font-weight: normal;
   font-style: normal;
+  font-display:swap;
 }
 @font-face {
   font-family: 'KaiLight';
   src: url('/LXGWWenKaiLite-Light.ttf');
   font-weight: normal;
   font-style: normal;
+  font-display:swap;
 }
 /* 英文 */
 @font-face {
@@ -17,16 +19,19 @@
   src: url('/Neucha-Regular.ttf');
   font-weight: normal;
   font-style: normal;
+  font-display:swap;
 }
 @font-face {
   font-family: 'PatrickHand';
   src: url('/PatrickHand-Regular.ttf');
   font-weight: normal;
   font-style: normal;
+  font-display:swap;
 }
 @font-face {
   font-family: 'PatrickHandSC';
   src: url('/PatrickHandSC-Regular.ttf');
   font-weight: normal;
   font-style: normal;
+  font-display:swap;
 }

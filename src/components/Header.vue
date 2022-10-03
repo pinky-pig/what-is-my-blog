@@ -1,5 +1,5 @@
 <template>
-  <header class="header-container fixed top-0 z-40 h-140px flex flex-row flex-wrap items-center justify-center p-4 gap-4 md:h-80px md:justify-between">
+  <header class="header-container fixed top-0 z-40 w-full h-140px flex flex-row flex-wrap items-center justify-center p-4 gap-4 md:h-80px md:justify-between">
     <!-- logo -->
 
     <div class="w-screen flex justify-center items-center md:w-10">
@@ -42,5 +42,6 @@ const toggleDark = useToggle(isDark)
   .header-container{
     backdrop-filter: saturate(50%) blur(8px);
     background: var(--background);
+    -webkit-backdrop-filter: saturate(50%) blur(8px);
   }
 </style>

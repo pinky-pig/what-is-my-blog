@@ -1,7 +1,7 @@
 <template>
   <div class="layout-wrapper">
     <Header></Header>
-    <main class=" flex-1 px-4 py-10 text-center text-gray-700 dark:text-gray-200">
+    <main class=" flex-1 p-4 text-center text-gray-700 dark:text-gray-200 mt-140px md:mt-80px">
       <RouterView />
     </main>
   </div>

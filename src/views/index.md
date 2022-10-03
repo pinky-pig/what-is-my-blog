@@ -10,10 +10,8 @@ name: README
   }
 </style>
 
-<br>
-
 <div class="text-center">
-  <span class="div-contrary-without-hover py-1 inline-block px-1 ">
+  <span class="div-contrary-without-hover inline-block px-1 ">
   👋Hey，我是王文博~
   </span>
 </div>
