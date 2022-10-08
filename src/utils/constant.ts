@@ -1,6 +1,6 @@
 export const THEME_TYPE = [
   {
-    id:0,
-    theme:''
-  }
+    id: 0,
+    theme: '',
+  },
 ]

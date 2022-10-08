@@ -1,9 +1,11 @@
+<script setup lang="ts">
+
+</script>
+
 <template>
-  <br />
+  <br>
   project
 </template>
-<script setup lang="ts">
-    
-</script>
+
 <style lang="less" scoped>
 </style>

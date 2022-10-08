@@ -1,14 +1,14 @@
 import type { App } from 'vue'
-import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import { createRouterGuard } from './guard'
+import { createRouter, createWebHistory } from 'vue-router'
 import { setupLayouts } from 'virtual:generated-layouts'
+import { createRouterGuard } from './guard'
 import generatedRoutes from '~pages'
 
 const routes = setupLayouts(generatedRoutes)
 const router = createRouter({
-  history: createWebHistory('/what-is-my-blog/'), 
+  history: createWebHistory('/what-is-my-blog/'),
   routes,
-});
+})
 export async function setupRouter(app: App) {
   app.use(router)
   createRouterGuard(router)

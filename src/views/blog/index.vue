@@ -1,10 +1,12 @@
+<script setup lang="ts">
+
+</script>
+
 <template>
-  <br />
+  <br>
   blog
 </template>
-<script setup lang="ts">
-    
-</script>
+
 <style lang="less" scoped>
 
 </style>
