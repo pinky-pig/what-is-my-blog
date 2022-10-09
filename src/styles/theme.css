@@ -1,4 +1,4 @@
-
+@import './markdown.css';
 :root{
   font-family:'Neucha',LXGW WenKai,LXGW WenKai Mono,'Patrick Hand','Patrick Hand SC';
   font-weight: 300;
@@ -54,12 +54,4 @@ html.dark{
 }
 ::-webkit-scrollbar-corner{
   display:none;
-}
-
-h1{
-  font-weight: 700;
-  font-size: 1.875rem;
-  line-height: 2.25rem;
-  margin-bottom: 2rem;
-  color: rgba(30, 58, 138, 1);
 }
