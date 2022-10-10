@@ -41,6 +41,17 @@ name: README
 
 <script setup>
   import CardGroup from '~/components/CardGroup.vue'
+
+  function log(){
+    console.log.apply(console,arguments);
+  }
+
+  log(
+      `%c 你好%c 王文博 Arvin  `,
+      "background:rgb(30 41 59) ; padding: 1px; border-radius: 3px 0 0 3px; color: #fff;font-size:24px",
+      "background:rgb(30 41 59); padding: 1px; border-radius: 0 3px 3px 0;  color: #fff;font-size:24px",
+    );
+
 </script>
 
 

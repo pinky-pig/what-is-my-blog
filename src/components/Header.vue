@@ -15,17 +15,16 @@ const toggleDark = useToggle(isDark)
 
     <!-- button -->
     <div class=" flex flex-row gap-2 ">
-      <router-link to="/blog" class="div-contrary">
-        <div class="cursor-pointer">
-          Blog
-        </div>
+
+      <router-link to="/project" class="div-contrary" title="Project">
+        <div class="cursor-pointer bg-gray-700 dark:bg-gray-200" i-carbon:workspace />
       </router-link>
 
-      <router-link to="/project" class="div-contrary">
-        <div class="cursor-pointer">
-          Project
-        </div>
-      </router-link>
+      <div class="div-contrary">
+        <a href="https://pinky-pig.github.io/blog/" target="_blank" title="Blog">
+          <div class="cursor-pointer bg-gray-700 dark:bg-gray-200" i-carbon-blog />
+        </a>
+      </div>
 
       <div class="div-contrary">
         <a href="https://github.com/pinky-pig/what-is-my-blog.git" target="_blank" title="GitHub">
@@ -33,7 +32,7 @@ const toggleDark = useToggle(isDark)
         </a>
       </div>
 
-      <div class=" div-contrary" @click="toggleDark()">
+      <div class=" div-contrary" @click="toggleDark()" title="切换黑暗模式">
         <div class="cursor-pointer" i="carbon-sun dark:carbon-moon" />
       </div>
     </div>
@@ -43,7 +42,7 @@ const toggleDark = useToggle(isDark)
 <style lang="less" scoped>
   .header-container{
     backdrop-filter: saturate(50%) blur(8px);
-    background: var(--background);
+    // background: var(--background);
     -webkit-backdrop-filter: saturate(50%) blur(8px);
   }
 </style>
