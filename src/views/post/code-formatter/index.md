@@ -4,14 +4,19 @@ name: blog
 
 <style>
   span,p{
-    @apply bg-[var(--bg-contrary)] rounded-md p-3px;
     font-family:'Neucha',LXGW WenKai,LXGW WenKai Mono,'Patrick Hand','Patrick Hand SC';
-    font-weight: 100;
-    padding-top:1%;
   }
   h1,h2,h3{
-    @apply bg-[var(--bg-contrary)] rounded-md p-3px hover:bg-[var(--bg-contrary-light)];
     font-family:'Neucha',LXGW WenKai,LXGW WenKai Mono,'Patrick Hand','Patrick Hand SC';
+  }
+  .prose{
+    background:white;
+    padding:1.5rem;
+    box-sizing: border-box;
+    border-radius:1rem;
+    border-color: #41403e;
+    border-style: solid;
+    border-width: 2px;
   }
 </style>
 
@@ -24,7 +29,7 @@ git commit --no-verify -m “xxx”
 
 # 预提交检查
 
-使用的工具
+使用的工具  
 - 🐱‍🏍 vscode setting.json
 - 🐱‍🚀 [eslint](https://cn.eslint.org/docs/rules/)
 - 🚠 [husky](https://typicode.github.io/husky/#/)
@@ -58,7 +63,7 @@ git commit --no-verify -m “xxx”
 ## 1. ESLint
 
 
-1. 安装 ESLint 和需要使用的规则（可选，这里使用的是 [@antfu/eslint-config](https://github.com/antfu/eslint-config)）
+安装 ESLint 和需要使用的规则（可选，这里使用的是 [@antfu/eslint-config](https://github.com/antfu/eslint-config)）
 
 ```bash
 pnpm i -D eslint 
@@ -77,7 +82,7 @@ npm set-script lint "eslint ."
   "lint": "eslint .",
 }
 ```
-2. .eslintrc.js 配置文件
+.eslintrc.js 配置文件
 
 ```js
 module.exports = {
@@ -109,7 +114,7 @@ module.exports = {
 
 ```
 
-3. .eslintignore 忽略文件
+.eslintignore 忽略文件
 
 ```text
 # eslint 忽略检查 (根据项目需要自行添加)

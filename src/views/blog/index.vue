@@ -1,20 +1,5 @@
 <script setup lang="ts">
-const list = [
-  {
-    title: 'Icons Basic Edit',
-    subtitle: 'To learn svg',
-    address: 'https://github.com/pinky-pig/icons-basic-edit.git',
-    imgUrl: 'https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/images20221002104728.png',
-    preview: 'https://pinky-pig.github.io/icons-basic-edit/',
-  },
-  {
-    title: 'What Is My Blog',
-    subtitle: 'To notes and share',
-    address: 'https://github.com/pinky-pig/what-is-my-blog.git',
-    imgUrl: 'https://cdn.jsdelivr.net/gh/pinky-pig/pic-bed/images20221002110434.png',
-    preview: 'https://pinky-pig.github.io/what-is-my-blog/',
-  },
-]
+
 </script>
 
 <template>
