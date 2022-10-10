@@ -1,11 +1,9 @@
 <script setup lang="ts">
-
+import CustomCard from '~/components/CustomCard.vue'
 </script>
 
 <template>
-  <br>
-  project
+  <CustomCard>
+    project
+  </CustomCard>
 </template>
-
-<style lang="less" scoped>
-</style>
