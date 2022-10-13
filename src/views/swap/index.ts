@@ -17,10 +17,50 @@ export function useSwap() {
     return result
   })
 
+  // 初始化body数组
+  const body = ref([11, 16])
+  const move = (d) => {
+    const h = body.value[0]
+    body.value.unshift(h + d)
+    body.value.pop()
+  }
+
+  const control = () => {
+    const d = {
+      right: 1,
+      left: -1,
+      up: -basicX,
+      down: basicX,
+    }
+
+    // 起飞(2)
+    // 转向
+    // 落下
+
+    setTimeout(() => {
+      move(d.up)
+    }, 500)
+    setTimeout(() => {
+      move(d.right)
+    }, 1000)
+    setTimeout(() => {
+      move(d.right)
+    }, 1500)
+    setTimeout(() => {
+      move(d.down)
+    }, 2000)
+    setTimeout(() => {
+      move(d.down)
+    }, 2500)
+  }
+
   return {
     grids,
     basicX,
     basicY,
+    body,
     initArena,
+    control,
   }
 }
+
