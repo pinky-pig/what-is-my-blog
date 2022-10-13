@@ -1,5 +1,5 @@
 <template>
-  <div class="screen-full-point-bg"></div>
+  <div class="screen-full-point-bg" />
 
   <div class="w-full h-full flex flex-col min-h-screen;">
     <Header />

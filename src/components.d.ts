@@ -9,7 +9,6 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     CardGroup: typeof import('./components/CardGroup.vue')['default']
     ConfettiCanvas: typeof import('./components/ConfettiCanvas.vue')['default']
-    copy: typeof import('./components/Group copy.vue')['default']
     CustomCard: typeof import('./components/CustomCard.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     Header: typeof import('./components/Header.vue')['default']
