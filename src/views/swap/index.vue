@@ -20,7 +20,7 @@ onMounted(() => {
 
 <template>
   <div
-    class=" grid gap-1 "
+    class=" grid gap-1 grid-rows-10 grid-cols-10"
     :class="`grid-rows-${grids.length} grid-cols-${grids[0].length}`"
   >
     <div
