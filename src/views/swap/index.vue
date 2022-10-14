@@ -1,11 +1,14 @@
 <script setup lang="ts">
-import { useSwap } from './index'
-const { grids, body, control } = useSwap()
+import { useBody, useSwap } from './index'
+const { grids } = useSwap()
+const { body, bodyR, control } = useBody()
 const symbolFn = i => Symbol(i)
 
 const normalizeItem = (i) => {
   if (body.value.includes(Number(i)))
     return '🍔'
+  if (bodyR.value.includes(Number(i)))
+    return '🍟'
   else
     return i
 }
@@ -17,7 +20,7 @@ onMounted(() => {
 
 <template>
   <div
-    class="w-200px grid gap-1"
+    class=" grid gap-1 "
     :class="`grid-rows-${grids.length} grid-cols-${grids[0].length}`"
   >
     <div
