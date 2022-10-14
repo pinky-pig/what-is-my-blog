@@ -16,8 +16,15 @@ onMounted(() => {
 </script>
 
 <template>
-  <div class="w-200px grid gap-1" :class="`grid-rows-${grids.length} grid-cols-${grids[0].length}`">
-    <div v-for="it in grids.flat()" :key="symbolFn(it)" class=" w-8 h-8 bg-gray-500 flex justify-center items-center text-white">
+  <div
+    class="w-200px grid gap-1"
+    :class="`grid-rows-${grids.length} grid-cols-${grids[0].length}`"
+  >
+    <div
+      v-for="it in grids.flat()"
+      :key="symbolFn(it)"
+      class=" w-8 h-8 flex justify-center items-center bg-gray-500 text-white"
+    >
       {{ normalizeItem(it) }}
     </div>
   </div>
