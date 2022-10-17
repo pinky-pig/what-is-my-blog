@@ -28,7 +28,7 @@ export function useSwap() {
 export function useBody(l = [53, 63], r = [55, 65]) {
   // 初始化body数组
   const f = l[l.length - 1] - r[r.length - 1]
-  const body = f < 0 ? ref(l) : ref(r)
+  const bodyL = f < 0 ? ref(l) : ref(r)
   const bodyR = f < 0 ? ref(r.reverse()) : ref(l.reverse())
 
   /**
@@ -54,10 +54,10 @@ export function useBody(l = [53, 63], r = [55, 65]) {
     // bodyL
     const runLA = ['up', 'up']
     runLA.splice(2, 0, ...Array.from({ length: Math.abs(f) }, () => 'right'))
-    runLA.push(...Array.from({ length: body.value.length + 1 }, () => 'down'))
+    runLA.push(...Array.from({ length: bodyL.value.length + 1 }, () => 'down'))
     runLA.forEach((i: string, idx: number) => {
       setTimeout(() => {
-        move(body.value, d[i])
+        move(bodyL.value, d[i])
       }, 500 * (idx + 1))
     })
 
@@ -73,7 +73,7 @@ export function useBody(l = [53, 63], r = [55, 65]) {
   }
 
   return {
-    body,
+    bodyL,
     bodyR,
     control,
   }

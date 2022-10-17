@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import { useBody, useSwap } from './index'
 const { grids } = useSwap()
-const { body, bodyR, control } = useBody()
+const { bodyL, bodyR, control } = useBody()
 const symbolFn = i => Symbol(i)
 
 const normalizeItem = (i) => {
-  if (body.value.includes(Number(i)))
+  if (bodyL.value.includes(Number(i)))
     return '🍔'
   if (bodyR.value.includes(Number(i)))
     return '🍟'
