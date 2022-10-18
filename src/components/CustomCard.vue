@@ -1,15 +1,15 @@
 <template>
   <div class="custom-card ">
-    <slot></slot>
+    <slot />
   </div>
 </template>
 
 <style lang="less" scoped>
 .custom-card{
   @apply bg-white relative mx-auto w-full h-full;
-  max-width: 65ch;
+  max-width: 80ch;
   border-radius: 0.5rem;
-  padding: 2rem;
+  padding: 1rem;
   border-radius: 0.5rem;
   border: 2px solid rgb(30 41 59);
   background-repeat: repeat;

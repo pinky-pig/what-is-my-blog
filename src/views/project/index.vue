@@ -7,3 +7,4 @@ import CustomCard from '~/components/CustomCard.vue'
     project
   </CustomCard>
 </template>
+

@@ -18,7 +18,7 @@ const list = [
 </script>
 
 <template>
-  <div class="mt-4 grid grid-cols-1 gap-8 print:grid-cols-2 sm:grid-cols-2 md:gap-6">
+  <div class="mt-4 grid grid-cols-1 gap-8 print:grid-cols-2 sm:grid-cols-2 lg:gap-6">
     <div v-for="item in list" :key="item.title" class="card bg-[var(--bg-contrary-light)]">
       <div class="card-body">
         <h4 class="card-title">
