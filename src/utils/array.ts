@@ -3,10 +3,10 @@ export const getRandom = (n: number, m: number) => Math.floor(Math.random() * (m
 
 // 生成 100 长度的数组
 export function createArr(defaultParams = 'Tom') {
-  const allItems = Array.from(Array(100).keys(), (item, index) => {
+  const allItems = Array.from(Array(100).keys(), (item) => {
     return { defaultParams, idx: item }
   })
-  const fillArr = new Array(10).fill({ defaultParams })
+  // const fillArr = new Array(10).fill({ defaultParams })
   return allItems
 }
 
@@ -39,7 +39,7 @@ export const treeToArr = (arr: any) => {
       node = node.concat(first.children) // 如果第一项有children属性，那么就把这个children放到node的最后一项取
       delete first.children // 然后再删除children属性，让第一项变成普通形式{name: xxx, id: xxx}
     }
-    result.push(first)
+    // result.push(first)
   }
   return result
 }
