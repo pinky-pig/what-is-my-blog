@@ -16,10 +16,17 @@ const activeComponent = computed(() => {
 </script>
 
 <template>
-  <div>动态路由</div>
   <component :is="activeComponent" />
 </template>
 
 <style lang="less" scoped>
 
 </style>
+
+<route lang="yaml">
+meta:
+  layout: home
+  requiresAuth: false
+  id: 1234
+  string: '1234'
+</route>

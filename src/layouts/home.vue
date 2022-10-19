@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import side from '~/layouts/side.vue'
 </script>
 
 <template>
@@ -7,7 +6,7 @@ import side from '~/layouts/side.vue'
 
   <Header />
   <main class="layout">
-    <!-- <side class="side" /> -->
+    <Side class="side" />
     <RouterView class="content" />
   </main>
 </template>
@@ -18,8 +17,6 @@ import side from '~/layouts/side.vue'
   height: calc(100vh - 140px);
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: center;
   max-width: 1024px;
   gap: 0px 24px;
   padding: 10px 0;

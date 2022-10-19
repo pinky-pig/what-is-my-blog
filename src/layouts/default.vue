@@ -3,7 +3,7 @@
 
   <div class="w-full h-full flex flex-col min-h-screen;">
     <Header />
-    <main class=" flex-1 p-4 text-center text-gray-700 dark:text-gray-200 mt-140px lg:mt-80px">
+    <main class=" flex-1 p-4 text-center text-gray-700 dark:text-gray-200 mt-140px lg:mt-80px flex justify-center">
       <RouterView />
     </main>
   </div>
