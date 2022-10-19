@@ -16,6 +16,7 @@ html{
 
   --text-contrary: rgba(55, 65, 81, 0.8);
   --geometry-bg:url(/geometry2.png);
+  --bg-border-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Cpath d='m0 0 4 4Zm4 0L0 4Z' stroke-width='.5' stroke='%23000'/%3E%3C/svg%3E");
 
 }
 
@@ -27,6 +28,9 @@ html.dark{
 
   --text-contrary: rgba(229, 231, 235, 0.8);
   --geometry-bg: transparent;
+
+  --bg-border-svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4'%3E%3Cpath d='m0 0 4 4Zm4 0L0 4Z' stroke-width='.5' stroke='%23333'/%3E%3C/svg%3E");
+
 }
 
 /* 滚动条 */
