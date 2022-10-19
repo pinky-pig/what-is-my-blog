@@ -19,7 +19,7 @@
   flex-direction: row;
   max-width: 1024px;
   gap: 0px 24px;
-  padding: 10px 0;
+  padding: 40px 0;
   margin: 140px auto 20px;
 }
 .side{

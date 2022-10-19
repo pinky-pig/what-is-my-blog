@@ -3,7 +3,7 @@ import { 测试, 测试1 } from '../article'
 const props = defineProps({
   no: {
     type: String,
-    default: '',
+    default: '0',
   },
 })
 
@@ -16,7 +16,9 @@ const activeComponent = computed(() => {
 </script>
 
 <template>
-  <component :is="activeComponent" />
+  <CustomCard class="wrapper">
+    <component :is="activeComponent" />
+  </CustomCard>
 </template>
 
 <style lang="less" scoped>

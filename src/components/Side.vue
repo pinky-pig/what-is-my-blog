@@ -12,7 +12,7 @@ import CustomCard from '~/components/CustomCard.vue'
 
 <style lang="less" scoped>
 .wrapper{
-  @apply w-full h-full overflow-y-auto overflow-x-hidden;
+  @apply overflow-y-auto overflow-x-hidden;
 }
 .list{
   font-size: .9rem;
