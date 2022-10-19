@@ -4,7 +4,7 @@ import CustomCard from '~/components/CustomCard.vue'
 
 <template>
   <CustomCard class="wrapper">
-    <router-link v-for="(item, index) in 10" :key="index" to="/post" class="list">
+    <router-link v-for="(item, index) in 10" :key="index" :to="`/post/${index}`" class="list">
       第100期 - 无忧孩童
     </router-link>
   </CustomCard>
