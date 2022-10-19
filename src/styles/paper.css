@@ -963,7 +963,7 @@ pre code {
 html {
   color: #41403e;
   color: var(--primary);
-  font-family: "Neucha", sans-serif;
+  /* font-family: "Neucha", sans-serif; */
   font-size: 20px;
 }
 
@@ -981,7 +981,7 @@ input,
 textarea,
 select,
 option {
-  font-family: "Neucha", sans-serif;
+  /* font-family: "Neucha", sans-serif; */
 }
 
 h1,

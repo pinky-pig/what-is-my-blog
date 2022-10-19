@@ -24,9 +24,9 @@ const route = useRoute()
   @apply overflow-y-auto overflow-x-hidden;
 }
 .list{
-  font-size: .9rem;
+  font-size: 1rem;
   margin: 1px;
-  padding: 0.3rem 0.7rem;
+  padding: 0.3rem 0.2rem;
   color: inherit;
   text-decoration: none;
   display: block;
