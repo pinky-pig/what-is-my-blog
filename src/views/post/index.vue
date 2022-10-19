@@ -1,10 +1,12 @@
 <script setup lang="ts">
+const router = useRouter()
+router.push({ path: '/post/0' })
 </script>
 
 <template>
-  <div class="wrapper ">
-    66
-  </div>
+  <CustomCard>
+    post
+  </CustomCard>
 </template>
 
 <route lang="yaml">

@@ -13,14 +13,14 @@
 
 <style lang="less" scoped>
 .layout{
-  @apply text-center text-gray-700 dark:text-gray-200;
+  @apply text-center text-gray-700 dark:text-gray-200 flex justify-center;
   height: calc(100vh - 140px);
   display: flex;
   flex-direction: row;
   max-width: 1024px;
   gap: 0px 24px;
   padding: 40px 0;
-  margin: 140px auto 20px;
+  margin: 140px auto 0px;
 }
 .side{
   width: 250px;

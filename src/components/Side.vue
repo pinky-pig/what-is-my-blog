@@ -1,12 +1,21 @@
 <script setup lang="ts">
 import CustomCard from '~/components/CustomCard.vue'
+const route = useRoute()
 </script>
 
 <template>
-  <CustomCard class="wrapper">
-    <router-link v-for="(item, index) in 10" :key="index" :to="`/post/${index}`" class="list">
-      第100期 - 无忧孩童
-    </router-link>
+  <CustomCard>
+    <div class="wrapper">
+      <router-link
+        v-for="(item, index) in 10"
+        :key="index"
+        :to="`/post/${index}`"
+        class="list"
+        :class="route.params.no === (`${index}`) ? 'activated' : ''"
+      >
+        第100期 - 无忧孩童
+      </router-link>
+    </div>
   </CustomCard>
 </template>
 
@@ -24,5 +33,10 @@ import CustomCard from '~/components/CustomCard.vue'
 }
 .list:hover{
   color: #a67c52 ;
+}
+.activated{
+  font-weight: 600;
+  color: #a67c52 ;
+
 }
 </style>
