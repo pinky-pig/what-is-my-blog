@@ -13,13 +13,13 @@
 
 <style lang="less" scoped>
 .layout{
-  @apply text-gray-700 dark:text-gray-200 flex justify-center;
+  @apply text-gray-700 dark:text-gray-200 flex justify-center ;
   height: calc(100vh - 140px);
   display: flex;
   flex-direction: row;
   max-width: 1024px;
   gap: 0px 24px;
-  padding: 40px 0;
+  padding: 40px 20px;
   margin: 140px auto 0px;
 }
 .side{
