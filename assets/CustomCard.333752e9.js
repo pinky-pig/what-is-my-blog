@@ -1,0 +1,1 @@
+import{_ as s,o as t,c as o,l as _}from"./index.61e8674f.js";const c={},d={class:"custom-card"};function n(e,r){return t(),o("div",d,[_(e.$slots,"default",{},void 0,!0)])}const l=s(c,[["render",n],["__scopeId","data-v-f51d3101"]]);export{l as C};
