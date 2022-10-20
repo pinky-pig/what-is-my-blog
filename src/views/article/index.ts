@@ -1,2 +1,10 @@
-export { default as 测试 } from './测试.md'
-export { default as 测试1 } from './测试1.md'
+export const fetchArticle = function () {
+  const list = [] as any
+  const modules = import.meta.glob('./*.md')
+  Object.keys(modules).forEach((key) => {
+    list.push(modules[key])
+  })
+  return list.map((item) => {
+    return defineAsyncComponent(item)
+  })
+}

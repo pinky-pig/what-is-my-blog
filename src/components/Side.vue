@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import CustomCard from '~/components/CustomCard.vue'
+import { fetchArticle } from '~/views/article'
+const num = fetchArticle()
+
 const route = useRoute()
 </script>
 
@@ -7,7 +10,7 @@ const route = useRoute()
   <CustomCard>
     <div class="wrapper">
       <router-link
-        v-for="(item, index) in 10"
+        v-for="(item, index) in num.length"
         :key="index"
         :to="`/post/${index}`"
         class="list"

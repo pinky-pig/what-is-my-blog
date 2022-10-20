@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import '../article/index'
 const router = useRouter()
 router.push({ path: '/post/0' })
 </script>
