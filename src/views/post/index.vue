@@ -6,7 +6,7 @@ router.push({ path: '/post/0' })
 
 <template>
   <CustomCard>
-    post
+    Post
   </CustomCard>
 </template>
 

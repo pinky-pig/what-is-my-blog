@@ -23,7 +23,7 @@
   margin: 140px auto 0px;
 }
 .side{
-  width: 250px;
+  width: 300px !important;
   display: none;
 }
 .content{
