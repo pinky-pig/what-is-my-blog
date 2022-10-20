@@ -1,0 +1,1 @@
+import{C as e}from"./CustomCard.3ee03bb5.js";import{d as t,o,g as a,w as r,i as s}from"./index.dcb63bb3.js";const d=t({__name:"index",setup(n){return(c,p)=>(o(),a(e,null,{default:r(()=>[s(" project ")]),_:1}))}});export{d as default};

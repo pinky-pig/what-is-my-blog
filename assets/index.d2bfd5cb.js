@@ -1,0 +1,1 @@
+import{C as e}from"./CustomCard.3ee03bb5.js";import{d as r,u as s,o as a,g as n,w as u,i as c}from"./index.dcb63bb3.js";import{b as o}from"./route-block.78efdbad.js";const p=r({__name:"index",setup(m){return s().push({path:"/post/0"}),(f,i)=>{const t=e;return a(),n(t,null,{default:u(()=>[c(" Post ")]),_:1})}}});typeof o=="function"&&o(p);export{p as default};

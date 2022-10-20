@@ -1,1 +1,0 @@
-import{m as e,o as s,c as o,b as a}from"./index.61e8674f.js";const c={class:"prose prose-sm m-auto text-left"},n=a("h1",null,"\u4ECA\u65E5\u9633\u5149",-1),r=[n],u=[],f={__name:"\u4ECA\u65E5\u9633\u5149",setup(_,{expose:t}){return t({frontmatter:{meta:[]}}),e({meta:[]}),(l,p)=>(s(),o("div",c,r))}};export{f as default,u as meta};

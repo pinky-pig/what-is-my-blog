@@ -1,0 +1,1 @@
+import{m as e,o as s,c as o,b as a}from"./index.dcb63bb3.js";const c={class:"prose prose-sm m-auto text-left"},n=a("h1",null,"\u{1F354}\u6D4B\u8BD5",-1),r=[n],u=[],f={__name:"\u6D4B\u8BD5",setup(_,{expose:t}){return t({frontmatter:{meta:[]}}),e({meta:[]}),(l,p)=>(s(),o("div",c,r))}};export{f as default,u as meta};
