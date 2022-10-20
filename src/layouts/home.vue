@@ -13,7 +13,7 @@
 
 <style lang="less" scoped>
 .layout{
-  @apply text-center text-gray-700 dark:text-gray-200 flex justify-center;
+  @apply text-gray-700 dark:text-gray-200 flex justify-center;
   height: calc(100vh - 140px);
   display: flex;
   flex-direction: row;

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { fetchArticle } from '../article'
+import { modules } from '../article'
 const props = defineProps({
   no: {
     type: String,
@@ -8,7 +8,7 @@ const props = defineProps({
 })
 
 const activeComponent = computed(() => {
-  return fetchArticle()[props.no]
+  return Object.values(modules)[props.no]
 })
 </script>
 
