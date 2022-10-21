@@ -11,3 +11,13 @@ export const pattern1 = /[?&]name=([^&]*)(&|$)/
 export const regTag = /<text.+?<\/text>/
 // 匹配标签内的内容
 export const regContent = /(?<=>).+?(?=<)/
+
+// 匹配两个字符之间的内容
+// 因为match带分组的话，会匹配出每个分组的内容
+export const reg1 = /a(\S*)b/
+// const s = 'aasdfsdafsdfb'
+// const result = s.match(reg1)
+// if (result) {
+//   result[1]
+// }
+

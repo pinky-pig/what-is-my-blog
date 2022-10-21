@@ -13,7 +13,6 @@
   border-radius: 0.5rem;
   border: 2px solid rgb(30 41 59);
   background-repeat: repeat;
-
 }
 .custom-card::after{
   position: absolute;

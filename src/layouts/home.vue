@@ -21,6 +21,7 @@
   gap: 0px 24px;
   padding: 40px 20px;
   margin: 140px auto 0px;
+  overflow: hidden;
 }
 .side{
   width: 300px !important;
@@ -28,6 +29,7 @@
 }
 .content{
   width: 750px;
+  overflow: auto;
 }
 @media (min-width: 1080px) {
   .side{
