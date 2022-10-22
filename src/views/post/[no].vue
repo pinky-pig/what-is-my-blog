@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import { modules } from '../article'
-const router = useRouter()
-
 const props = defineProps({
   no: {
     type: String,
@@ -13,13 +11,6 @@ const activeComponent = computed(() => {
   return Object.values(modules)[props.no]
 })
 
-const isLargeScreen = useMediaQuery('(min-width: 1024px)')
-
-watchEffect(() => {
-  if (!isLargeScreen.value) {
-    router.push({ path: '/post' })
-  }
-})
 </script>
 
 <template>
