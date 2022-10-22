@@ -6,7 +6,8 @@ import generatedRoutes from '~pages'
 
 const routes = setupLayouts(generatedRoutes)
 const router = createRouter({
-  history: createWebHistory('/what-is-my-blog/'),
+  // history: createWebHistory('/what-is-my-blog/'),
+  history: createWebHistory(),
   routes,
 })
 export async function setupRouter(app: App) {

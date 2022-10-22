@@ -15,7 +15,7 @@ import path from 'path'
 const markdownWrapperClasses = 'prose prose-sm m-auto text-left'
 
 export default defineConfig({
-  base:'/what-is-my-blog/',
+  // base:'/what-is-my-blog/',
   plugins: [
     Vue({
       include: [/\.vue$/, /\.md$/],
