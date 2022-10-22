@@ -17,7 +17,7 @@
   display: flex;
   flex-direction: row;
   max-width: 1080px;
-  gap: 0px 24px;
+  gap: 0px 15px;
   padding: 40px 20px;
   margin: 140px auto 0px;
   overflow: hidden;
@@ -27,13 +27,14 @@
   display: none;
   flex-shrink: 0;
   flex-grow: 0;
+  height: 60vh;
 }
 .content{
   max-width: 750px;
   flex-shrink: 0;
   flex-grow: 0;
 }
-@media (min-width: 1080px) {
+@media (min-width: 1024px) {
   .side{
     display: block;
   }

@@ -1,7 +1,14 @@
 <script setup lang="ts">
 import '../article/index'
 const router = useRouter()
-router.push({ path: '/post/0' })
+
+const isLargeScreen = useMediaQuery('(min-width: 1024px)')
+watchEffect(() => {
+  if (isLargeScreen.value) {
+    router.push({ path: '/post/0' })
+  }
+})
+
 </script>
 
 <template>
