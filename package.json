@@ -12,6 +12,7 @@
     "prepare": "husky install"
   },
   "dependencies": {
+    "@type-challenges/utils": "^0.1.1",
     "@vueuse/core": "^9.2.0",
     "@vueuse/head": "^0.7.9",
     "canvas-confetti": "^1.5.1",
@@ -43,10 +44,10 @@
     "unocss": "^0.45.21",
     "vite": "^3.1.0",
     "vite-plugin-pages": "^0.25.0",
+    "vite-plugin-prismjs": "^0.0.8",
     "vite-plugin-pwa": "^0.12.7",
     "vite-plugin-vue-layouts": "^0.6.0",
     "vite-plugin-vue-markdown": "^0.20.1",
-    "vite-plugin-prismjs": "^0.0.8",
     "vite-ssg": "^0.20.2",
     "vite-ssg-sitemap": "^0.2.7",
     "vue-tsc": "^0.40.4"
