@@ -14,22 +14,24 @@
 <style lang="less" scoped>
 .layout{
   @apply text-gray-700 dark:text-gray-200 flex justify-center ;
-  height: calc(100vh - 140px);
   display: flex;
   flex-direction: row;
-  max-width: 1024px;
+  max-width: 1080px;
   gap: 0px 24px;
   padding: 40px 20px;
   margin: 140px auto 0px;
   overflow: hidden;
 }
 .side{
-  width: 300px !important;
+  width: 250px !important;
   display: none;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 .content{
-  width: 750px;
-  overflow: auto;
+  max-width: 750px;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 @media (min-width: 1080px) {
   .side{
@@ -37,7 +39,6 @@
   }
   .layout{
     margin-top: 80px;
-    height: calc(100vh - 80px);
   }
 }
 .screen-full-point-bg{

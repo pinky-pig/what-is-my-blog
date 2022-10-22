@@ -6,7 +6,7 @@
 
 <style lang="less" scoped>
 .custom-card{
-  @apply bg-white dark:bg-[#121212] relative w-full h-full;
+  @apply bg-white dark:bg-[#121212] relative w-full ;
   max-width: 80ch;
   border-radius: 0.5rem;
   padding: 1rem;
