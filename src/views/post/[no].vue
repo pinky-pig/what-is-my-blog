@@ -10,7 +10,6 @@ const props = defineProps({
 const activeComponent = computed(() => {
   return Object.values(modules)[props.no]
 })
-
 </script>
 
 <template>
