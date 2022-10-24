@@ -18,7 +18,7 @@
   flex-direction: row;
   max-width: 1080px;
   gap: 0px 15px;
-  padding: 40px 20px;
+  padding: 20px 20px;
   margin: 140px auto 0px;
   overflow: hidden;
 }

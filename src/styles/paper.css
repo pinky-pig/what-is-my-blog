@@ -1030,7 +1030,7 @@ h6 {
   text-align: right;
 }
 
-img {
+/* img {
   border-bottom-left-radius: 15px 255px;
   border-bottom-right-radius: 225px 15px;
   border-top-left-radius: 255px 15px;
@@ -1059,7 +1059,7 @@ img.no-responsive {
 img.no-border {
   border: 0;
   border-radius: 0;
-}
+} */
 
 ol {
   list-style-type: decimal;

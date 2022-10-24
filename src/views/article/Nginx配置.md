@@ -1,4 +1,4 @@
-## nginx 配置
+# nginx 配置
 
 前端使用到的基础 nginx 配置
 
