@@ -1,4 +1,10 @@
-# nginx 配置
+---
+title: Nginx 配置
+time: 2022/10/24
+content: 前端使用到的基础 nginx 配置
+---
+
+# Nginx 配置
 
 前端使用到的基础 nginx 配置
 

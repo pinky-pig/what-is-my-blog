@@ -21,3 +21,5 @@ export const reg1 = /a(\S*)b/
 //   result[1]
 // }
 
+// 匹配所有字符。 .* 不包括 \n
+export const regAllCharacter = /---([\s\S]*)---$/m
