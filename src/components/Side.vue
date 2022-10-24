@@ -32,23 +32,30 @@ const route = useRoute()
 </template>
 
 <style lang="less" scoped>
-.wrapper{
+.wrapper {
   @apply overflow-y-auto overflow-x-hidden;
 }
-.list{
+
+.list {
   font-size: 1rem;
   margin: 1px;
   padding: 0.3rem 0.2rem;
   color: inherit;
   text-decoration: none;
   display: block;
+
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
-.list:hover{
-  color: #a67c52 ;
+
+.list:hover {
+  color: #a67c52;
 }
-.activated{
+
+.activated {
   font-weight: 600;
-  color: #a67c52 ;
+  color: #a67c52;
 
 }
 </style>

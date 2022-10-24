@@ -2,10 +2,10 @@
 name: README
 ---
 
-<style>
+<style scoped>
   span{
     @apply bg-[var(--bg-contrary)] rounded-md p-3px;
-    font-family:'Neucha',LXGW WenKai,LXGW WenKai Mono,'Patrick Hand','Patrick Hand SC';
+    font-family:LXGW WenKai,'Neucha', LXGW WenKai Mono,'Patrick Hand','Patrick Hand SC' !important;
     font-weight: 100;
     padding-top:1%;
   }
