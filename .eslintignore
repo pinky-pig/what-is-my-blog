@@ -17,4 +17,4 @@ package.json
 !.env-config.ts
 components.d.ts
 *.config.ts
-src/views/type-challenges
+src/views/type-challenges/*.md

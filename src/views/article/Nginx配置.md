@@ -1,6 +1,6 @@
 ---
 title: Nginx 配置
-time: 2022/10/24
+time: 2022/10/26
 content: 前端使用到的基础 nginx 配置
 ---
 

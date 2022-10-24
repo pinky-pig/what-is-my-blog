@@ -24,16 +24,20 @@ list = list.filter(Boolean)
 
 // 通过读取文件内容生成列表
 interface frontmatter {
+  file: string
   title: string
-  time: string
+  time: Date
   content: string
 }
 const li = ref<frontmatter[]>([])
-Object.keys(modulesRaw).forEach((i) => {
-  modulesRaw[i]().then((res) => {
+await Object.keys(modulesRaw).forEach(async (i) => {
+  await modulesRaw[i]().then((res) => {
+    const result = i.match(reg)
     const o = useMdFrontmatter(res)
-    if (o.title !== '')
-      li.value.push(o)
+    if (o.title !== '' && result)
+      li.value.push({ file: result[1], ...o, time: new Date(o.time) })
+
+    li.value = li.value.sort((a, b) => a.time.getTime() - b.time.getTime())
   })
 })
 </script>
@@ -60,7 +64,7 @@ Object.keys(modulesRaw).forEach((i) => {
           第 {{ idx + 1 }} 期 - {{ it.title }}
         </div>
         <div class="text-grey-darker text-sm text-gray-500">
-          {{ it.time }}
+          {{ it.time.toLocaleDateString() }}
         </div>
       </div>
       <p class="text-gray-500 text-sm w-94 overflow-hidden pt-2.5 line-clamp-2 px-3 w-full h-12 box-border">
