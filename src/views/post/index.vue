@@ -30,15 +30,20 @@ interface frontmatter {
   content: string
 }
 const li = ref<frontmatter[]>([])
-await Object.keys(modulesRaw).forEach(async (i) => {
-  await modulesRaw[i]().then((res) => {
-    const result = i.match(reg)
-    const o = useMdFrontmatter(res)
-    if (o.title !== '' && result)
-      li.value.push({ file: result[1], ...o, time: new Date(o.time) })
-
-    li.value = li.value.sort((a, b) => a.time.getTime() - b.time.getTime())
+const promiseArr = Object.keys(modulesRaw).map((i) => {
+  return new Promise<void>((resolve) => {
+    modulesRaw[i]().then((res) => {
+      const result = i.match(reg)
+      const o = useMdFrontmatter(res)
+      if (o.title !== '' && result)
+        li.value.push({ file: result[1], ...o, time: new Date(o.time) })
+      resolve()
+    })
   })
+})
+// 按时间排序
+Promise.all(promiseArr).then(() => {
+  li.value = li.value.sort((a, b) => a.time.getTime() - b.time.getTime())
 })
 </script>
 
