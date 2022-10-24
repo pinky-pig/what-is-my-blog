@@ -9,6 +9,9 @@
   width: 100%;
 }
 
+.language-bash{
+  font-size: 16px !important;
+}
 html:not(.dark) .prose {
   --prism-foreground: #393a34;
   --prism-background: #fbfbfb;
