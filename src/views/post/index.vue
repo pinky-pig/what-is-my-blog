@@ -5,9 +5,8 @@ import { modules } from '~/views/article'
 const router = useRouter()
 
 const isLargeScreen = useMediaQuery('(min-width: 1024px)')
-if (isLargeScreen.value) {
+if (isLargeScreen.value)
   router.push({ path: '/post/0' })
-}
 
 const reg = /\.\/(\S*)\.md/
 let list = Object.keys(modules).map((item) => {
@@ -31,7 +30,7 @@ list = list.filter(Boolean)
         @click="router.push({ path: `/post/${idx}` })"
       >
         第 {{ idx + 1 }} 期 - {{ it }}
-    </div>
+      </div>
     </div>
   </CustomCard>
 </template>
