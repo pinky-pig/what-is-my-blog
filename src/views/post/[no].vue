@@ -14,6 +14,7 @@ interface frontmatter {
   title: string
   time: Date
   content: string
+  image: string
 }
 const li = ref<frontmatter[]>([])
 const promiseArr = Object.keys(modulesRaw).map((i) => {

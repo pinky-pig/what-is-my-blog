@@ -2,6 +2,7 @@
 title: Nginx 配置
 time: 2022/10/26
 content: 前端使用到的基础 nginx 配置
+image: https://gw.alipayobjects.com/zos/k/app2/SCR-20221015-wy0.png?x-oss-process=image/resize,w_500
 ---
 
 # Nginx 配置

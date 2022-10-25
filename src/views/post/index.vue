@@ -28,6 +28,7 @@ interface frontmatter {
   title: string
   time: Date
   content: string
+  image: string
 }
 const li = ref<frontmatter[]>([])
 const promiseArr = Object.keys(modulesRaw).map((i) => {
@@ -37,6 +38,7 @@ const promiseArr = Object.keys(modulesRaw).map((i) => {
       const o = useMdFrontmatter(res)
       if (o.title !== '' && result)
         li.value.push({ file: result[1], ...o, time: new Date(o.time) })
+
       resolve()
     })
   })
@@ -60,7 +62,7 @@ Promise.all(promiseArr).then(() => {
     >
       <img
         class=" h-52 rounded-t-md w-full max-w-72 md:w-72"
-        src="https://gw.alipayobjects.com/zos/k/bv/IMG_1115.jpg?x-oss-process=image/resize,w_500"
+        :src="it.image"
         :alt="`第 ${idx + 1} 期 - ${it.title}`"
         style="background: linear-gradient(rgb(236, 233, 230), rgb(255, 255, 255));"
       >
