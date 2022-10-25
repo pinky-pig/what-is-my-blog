@@ -8,6 +8,7 @@ name: README
     font-family:LXGW WenKai,'Neucha', LXGW WenKai Mono,'Patrick Hand','Patrick Hand SC' !important;
     font-weight: 100;
     padding-top:1%;
+    font-style: normal;
   }
 </style>
 

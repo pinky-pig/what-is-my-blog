@@ -54,6 +54,7 @@ Promise.all(promiseArr).then(() => {
     <div
       v-for="(it, idx) in li"
       :key="idx"
+      class="dark:bg-[#121212]"
       mx-auto
       w-full max-w-72 md:w-72 flex
       flex-col justify-center rounded-md
