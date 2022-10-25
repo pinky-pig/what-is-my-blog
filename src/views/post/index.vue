@@ -68,7 +68,7 @@ Promise.all(promiseArr).then(() => {
         style="background: linear-gradient(rgb(236, 233, 230), rgb(255, 255, 255));"
       >
       <div class="w-full flex justify-between items-center leading-tight pt-4 px-3 box-border">
-        <div class="font-bold text-black">
+        <div class="font-bold text-black dark:text-gray-300">
           第 {{ idx + 1 }} 期 - {{ it.title }}
         </div>
         <div class="text-grey-darker text-sm text-gray-500">
